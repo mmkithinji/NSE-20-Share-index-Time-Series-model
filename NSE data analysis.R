@@ -4,6 +4,7 @@
 
 
 ###Loading required packages. Note that any missing package should be installed via the TOOLS menu or console window
+
 library(ecdfHT)
 library(tseries)
 library(forecast)
@@ -13,8 +14,10 @@ library(aTSA)
 library(FinTS)
 library(fGarch)
 library(rugarch)
+
 ### Importing the excel data. Note that this is replaced with the file path in your device before running this pice of code. 
 ##Note that this data can be downloaded from the Nairobi Securities Exchange Website. consult the author incase of any challenges.
+
 data1<-read.csv("C:\\Pau\\Research\\Risk Measures\\CODE\\KenyaNSE20HistoricalData.csv",header = T)
 ###Price data analysis
 pr<-gsub(",", "", data1[,2])  #to replace all seperators to ensure comma separation of entires 
